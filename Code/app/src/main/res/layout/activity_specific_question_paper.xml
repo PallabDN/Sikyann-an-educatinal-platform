@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/specific_question_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SpecificQuestionPaperActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/input_layout_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/specificQuestionPaperTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/tittle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/specificQuestionPaperSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle"
+            android:textSize="@dimen/input_text_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/specificQuestionPaperTotalMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark"
+            android:textSize="@dimen/small_input_text_size"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:id="@+id/specific_copy_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/specific_copy"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/copy"
+                android:contentDescription="@string/copy" />
+            <TextView
+                android:id="@+id/specific_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code"
+                android:textSize="12sp"
+                android:layout_gravity="start"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLength="30"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_background"
+            />
+
+        <LinearLayout
+            android:id="@+id/specific_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/performance"
+            android:layout_margin="@dimen/input_layout_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="performance"
+            android:background="@drawable/button_style"
+            />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

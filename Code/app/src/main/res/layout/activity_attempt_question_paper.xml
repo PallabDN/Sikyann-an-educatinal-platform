@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/attempt_question_paper_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AttemptQuestionPaperActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_question_paper_code"
+        android:layout_margin="@dimen/input_layout_margin"
+        android:textSize="@dimen/input_text_size"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="@dimen/input_layout_margin"
+        android:layout_marginRight="@dimen/input_layout_margin"
+        android:hint="@string/code"
+        app:boxStrokeColor="@color/black"
+        app:boxCornerRadiusBottomEnd="@dimen/input_layout_corner_radius"
+        app:boxCornerRadiusBottomStart="@dimen/input_layout_corner_radius"
+        app:boxCornerRadiusTopEnd="@dimen/input_layout_corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/input_layout_corner_radius">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/question_paper_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_input_text_size"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/enter_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="@string/enter"
+        style="?attr/buttonStyle"
+        android:layout_marginLeft="@dimen/input_layout_margin"
+        android:layout_marginStart="@dimen/input_layout_margin"
+        android:layout_marginTop="@dimen/input_layout_margin"
+        android:layout_gravity="start"/>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/specific_classRoom_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SpecificClassRoomActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/input_layout_margin">
+    <TextView
+        android:id="@+id/specific_classRoomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/title"
+        android:textSize="@dimen/tittle"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/specific_classRoomSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/subtitle_"
+        android:textSize="@dimen/input_text_size"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/specific_classroom_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/description"
+        android:textSize="@dimen/small_input_text_size"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/specific_copy_code_classRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/specific_copy_classRoom"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/copy"
+            android:contentDescription="@string/copy" />
+        <TextView
+            android:id="@+id/specific_code_classRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            android:textSize="10sp"
+            android:layout_gravity="start"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:maxLength="30"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_background"
+        />
+
+    <LinearLayout
+        android:id="@+id/classroomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/uploadClassroomContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_resources"
+            android:background="@drawable/button_style"
+            android:padding="@dimen/button_padding"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/classMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/members"
+            android:layout_marginLeft="@dimen/input_layout_margin"
+            android:background="@drawable/button_style"
+            android:padding="@dimen/button_padding"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/input_layout_margin" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/studentExit"
+        android:background="@drawable/button_style"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:layout_gravity="right"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classroom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/input_layout_margin"
+        />
+    <TextView
+        android:id="@+id/NoClassRoomContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_content"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>

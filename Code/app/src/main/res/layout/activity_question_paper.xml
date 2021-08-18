@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/question_paper_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.QuestionPaperActivity"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/questionPaperToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Question Paper"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/questionPaper_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/input_layout_margin"
+        />
+    <TextView
+        android:id="@+id/student_questionPapers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_question_papers"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>

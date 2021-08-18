@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_name">40sp</dimen>
+    <dimen name="input_text_size">20sp</dimen>
+    <dimen name="small_input_text_size">15sp</dimen>
+    <dimen name="tittle">30sp</dimen>
+    <dimen name="subTittle">10sp</dimen>
+
+    <dimen name="input_layout_margin">20dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+
+    <dimen name="button_padding">10dp</dimen>
+
+    <dimen name="input_layout_corner_radius">25dp</dimen>
+    
+    <dimen name="cardElevation">3dp</dimen>
+
+
+
+
+
+</resources>

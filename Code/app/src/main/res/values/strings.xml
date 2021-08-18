@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Sikyann</string>
+
+
+    <string name="gmail">gmail</string>
+    <string name="password">password</string>
+    <string name="login_as_student">LogIn</string>
+    <string name="have_an_account">have not an account?</string>
+    <string name="register">Register</string>
+
+
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="register_as">Register as,</string>
+    <string name="as_teacher">as Teacher,</string>
+    <string name="name">name</string>
+    <string name="address">address</string>
+    <string name="mobile">mobile</string>
+    <string name="submit">submit</string>
+    <string name="as_student">as Student,</string>
+    <string name="father_s_name">father\'s name</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="occupation">Occupation</string>
+    <string name="create_question_paper">create question paper</string>
+    <string name="create_classroom">create classroom</string>
+    <string name="class_room">Class Room</string>
+    <string name="question_paper">Question Paper</string>
+    <string name="paper">Paper</string>
+    <string name="room">Room</string>
+    <string name="paper_history">paper history</string>
+    <string name="finish">finish</string>
+    <string name="description">description</string>
+    <string name="subtitle">subtitle/description</string>
+    <string name="title">title</string>
+    <string name="question">question</string>
+    <string name="mark">marks</string>
+    <string name="text">text</string>
+    <string name="option">option</string>
+    <string name="next">next</string>
+    <string name="answer">answer</string>
+    <string name="_1">1.</string>
+    <string name="upload_image">upload image</string>
+    <string name="add_option">add option</string>
+    <string name="subtitle_">subtitle</string>
+    <string name="enter_question_paper_code">Enter Question Paper Code</string>
+    <string name="code">code</string>
+    <string name="enter">enter</string>
+    <string name="enter_classroom_code">Enter ClassRoom Code</string>
+    <string name="date">date</string>
+    <string name="upload_file">upload file</string>
+    <string name="time">time</string>
+    <string name="_12_02_2000">12/02/2000</string>
+    <string name="total_mark">Total Mark</string>
+    <string name="created_by">Created By</string>
+    <string name="copy">copy</string>
+    <string name="_12_10">12:10</string>
+    <string name="upload_resources">upload resources</string>
+    <string name="link">link</string>
+    <string name="pdf_image">pdf/image</string>
+    <string name="pdf">pdf</string>
+    <string name="image">image</string>
+    <string name="members">members</string>
+    <string name="no_question_papers">No Question Papers</string>
+    <string name="no_classroom">No ClassRoom</string>
+    <string name="no_content">No Content</string>
+    <string name="exit">exit</string>
+    <string name="no_students_yet">No Students Yet</string>
+    <string name="no_student_attempt_this_paper">No Student Attempt this Paper</string>
+    <string name="network">Check Your Internet Connection</string>
+    <string name="log_out">log out</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="save_changes">Save Changes</string>
+</resources>

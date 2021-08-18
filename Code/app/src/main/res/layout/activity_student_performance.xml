@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/student_performance_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StudentPerformanceActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/input_layout_margin">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/student_performance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+    <TextView
+        android:id="@+id/noStudent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text = "@string/no_student_attempt_this_paper"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>

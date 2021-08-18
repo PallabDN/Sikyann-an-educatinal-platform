@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/classRoom_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ClassRoomsActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/classroom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="ClassRooms"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classRoom_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/input_layout_margin"
+        />
+
+    <TextView
+        android:id="@+id/student_NoClassRoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_classroom"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

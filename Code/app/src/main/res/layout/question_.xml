@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/input_layout_margin"
+    android:theme="@style/AppFullScreenTheme"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/question_layout_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1"
+            android:textSize="@dimen/input_text_size"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/question_layout_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question"
+            android:textSize="@dimen/input_text_size"
+            android:layout_weight="10"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/question_layout_mark"
+            android:layout_marginLeft="@dimen/input_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/input_text_size" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/question_layout_image"
+        android:layout_marginTop="@dimen/input_layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/image"
+        android:visibility="gone"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/question_layout_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/input_layout_margin"
+        android:layout_marginStart="@dimen/input_layout_margin">
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/answer_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer"
+        android:layout_marginTop="@dimen/input_layout_margin"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/input_layout_margin"
+        android:layout_marginStart="@dimen/input_layout_margin" />
+    <TextView
+        android:id="@+id/correct_answer_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer"
+        android:layout_marginLeft="@dimen/input_layout_margin"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/input_layout_margin" />
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/cardElevation"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/input_layout_margin"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/titleQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title"
+                    android:textSize="25sp"
+                    android:layout_gravity="start"
+                    android:ellipsize="end"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/subtitleQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle_"
+                    android:textSize="18sp"
+                    android:layout_gravity="start"
+                    android:ellipsize="end"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    />
+                <LinearLayout
+                    android:id="@+id/copy_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+                    <ImageView
+                        android:id="@+id/copy"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/copy"
+                        android:contentDescription="@string/copy" />
+                    <TextView
+                        android:id="@+id/code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/code"
+                        android:textSize="12sp"
+                        android:layout_gravity="start"
+                        android:ellipsize="marquee"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_12_02_2000"
+                    android:layout_gravity="end"
+                    android:ellipsize="end"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_12_10"
+                    android:layout_gravity="end"
+                    android:ellipsize="end"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_mark"
+                    android:layout_gravity="end"
+                    android:ellipsize="end"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/createdBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/created_by"
+                    android:layout_gravity="end"
+                    android:ellipsize="end"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/memberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="@dimen/input_text_size"
+        android:textStyle="bold"
+
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/memberGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gmail"
+        android:textSize="@dimen/small_input_text_size"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/memberMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile"
+        android:textSize="@dimen/small_input_text_size"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/memberFather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/father_s_name"
+        android:textSize="@dimen/small_input_text_size"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/memberAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textSize="@dimen/subTittle"
+        android:textColor="@color/black"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

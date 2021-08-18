@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:id="@+id/create_question_paper_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CreateQuestionPaperActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/button_padding"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_question_paper"
+                android:textSize="@dimen/tittle"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_background"
+                />
+        </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="@dimen/input_layout_margin"
+                android:layout_marginLeft="@dimen/input_layout_margin"
+                android:layout_marginRight="@dimen/input_layout_margin"
+                android:hint="@string/title"
+                app:boxStrokeColor="@color/black"
+                app:boxCornerRadiusBottomEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusBottomStart="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopStart="@dimen/input_layout_corner_radius">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/question_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_input_text_size"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/subtitle"
+                app:boxStrokeColor="@color/black"
+                app:boxCornerRadiusBottomEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusBottomStart="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopStart="@dimen/input_layout_corner_radius"
+                android:layout_marginLeft="@dimen/input_layout_margin"
+                android:layout_marginRight="@dimen/input_layout_margin"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/question_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_input_text_size"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/total_mark_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/input_layout_margin"
+            android:layout_marginEnd="@dimen/input_layout_margin"
+            android:textSize="@dimen/small_input_text_size"
+            android:textColor="@color/black"
+            />
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_background"
+            />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/final_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/line_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/view_background"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/input_layout_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="@string/question"
+                    app:boxStrokeColor="@color/black"
+                    android:layout_weight="4"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_layout_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/input_layout_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/input_layout_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/input_layout_corner_radius">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/question_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/small_input_text_size"
+                        android:inputType="text"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginLeft="@dimen/input_layout_margin"
+                    android:hint="@string/mark"
+                    app:boxStrokeColor="@color/black"
+                    android:layout_weight="1"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_layout_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/input_layout_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/input_layout_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/input_layout_corner_radius"
+                    android:layout_marginStart="@dimen/input_layout_margin">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/question_marks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/small_input_text_size"
+                        android:inputType="number"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/questionImage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/upload_image"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:padding="@dimen/button_padding"
+                />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="@dimen/input_layout_margin"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/option_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/small_margin">
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/question_option_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/option"
+                android:layout_marginTop="@dimen/small_margin"
+                app:boxStrokeColor="@color/black"
+                app:boxCornerRadiusBottomEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusBottomStart="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopStart="@dimen/input_layout_corner_radius">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/questions_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_input_text_size"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/add_options"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/add_option"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:padding="@dimen/button_padding"
+                android:layout_marginLeft="@dimen/input_layout_margin"
+                android:layout_marginStart="@dimen/input_layout_margin" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/answer"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginTop="@dimen/input_layout_margin"
+                app:boxCornerRadiusBottomEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusBottomStart="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopEnd="@dimen/input_layout_corner_radius"
+                app:boxCornerRadiusTopStart="@dimen/input_layout_corner_radius">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/questions_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_input_text_size"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/input_layout_margin"
+            android:layout_marginStart="@dimen/input_layout_margin"
+            android:layout_marginTop="@dimen/input_layout_margin">
+            <Button
+                android:id="@+id/question_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="@string/next"
+                style="?attr/buttonStyle"
+                />
+            <Button
+                android:id="@+id/question_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="@string/finish"
+                style="?attr/buttonStyle"
+                android:layout_marginLeft="@dimen/input_layout_margin"
+                android:layout_marginStart="@dimen/input_layout_margin" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
