@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sikyann">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".Activity.UserEditDetailsActivity"></activity>
+        <activity android:name=".Activity.UserProfileActivity" />
+        <activity android:name=".Activity.ClassRoomMembersActivity" />
+        <activity android:name=".Activity.ViewPDFActivity" />
+        <activity android:name=".Activity.UploadClassRoomContentActivity" />
+        <activity android:name=".Activity.StudentPerformanceActivity" />
+        <activity android:name=".Activity.PerformanceActivity" />
+        <activity android:name=".Activity.SpecificQuestionPaperActivity" />
+        <activity android:name=".Activity.TeacherQuestPapersActivity" />
+        <activity android:name=".Activity.TeacherClassRoomsActivity" />
+        <activity android:name=".Activity.SpecificClassRoomActivity" />
+        <activity android:name=".Activity.QuestionActivity" />
+        <activity android:name=".Activity.AttemptQuestionPaperActivity" />
+        <activity android:name=".Activity.JoinClassRoomActivity" />
+        <activity
+            android:name=".Activity.CreateQuestionPaperActivity"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name=".Activity.CreateClassroomActivity" />
+        <activity android:name=".Activity.QuestionPaperActivity" />
+        <activity android:name=".Activity.ClassRoomsActivity" />
+        <activity android:name=".Activity.HomeActivity" />
+        <activity android:name=".Activity.StudentActivityRegister" />
+        <activity android:name=".Activity.TeacherRegisterActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
