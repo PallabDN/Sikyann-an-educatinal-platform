@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "62913282439",
+    "project_id": "sikyann",
+    "storage_bucket": "sikyann.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62913282439:android:9c45b372327a5fc2181322",
+        "android_client_info": {
+          "package_name": "com.example.sikyann"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62913282439-967t8qc9d48m20rnfrul77cjqk0s7b65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sikyann",
+            "certificate_hash": "9b6088e3b1407e076c284ad2bc6f24a97f08a105"
+          }
+        },
+        {
+          "client_id": "62913282439-4s9b6fkdn1d1rbklmhn2rcuco86ckesb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoDmcWneBA9HeHRIVZuFBZYZ5ejoJVTXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62913282439-4s9b6fkdn1d1rbklmhn2rcuco86ckesb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
