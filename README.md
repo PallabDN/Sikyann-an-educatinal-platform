@@ -1,2 +1,5 @@
 # Sikyann-an-educatinal-platform
-Sikyann is an android app. I use Kotlin to develop this app. 
+Kotlin is used to develop this app. Here teacher can crearte classroom and share resources. Teacher can also take objective type tests.
+
+
+
